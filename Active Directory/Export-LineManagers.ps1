@@ -1,0 +1,1 @@
+﻿Get-ADUser -Properties * -Filter {EmailAddress -like '*' -and ObjectClass -eq 'User'} | Select Name, EmailAddress, physicalDeliveryOfficeName, Manager | Export-Csv D:\AD-Users.csv

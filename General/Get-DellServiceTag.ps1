@@ -1,0 +1,1 @@
+﻿Get-WmiObject -Class win32_Bios | Select SerialNumber

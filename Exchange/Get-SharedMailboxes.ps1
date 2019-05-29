@@ -1,0 +1,1 @@
+﻿Get-Mailbox -RecipientTypeDetails SharedMailbox -ResultSize:Unlimited | Select Identity,Alias,DisplayName | sort DisplayName | Export-Csv D:\Shared-Mailboxes.csv
