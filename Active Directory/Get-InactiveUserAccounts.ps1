@@ -1,0 +1,1 @@
+﻿Search-ADAccount -AccountInactive -TimeSpan 10 | Select Name
