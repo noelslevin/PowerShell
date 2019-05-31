@@ -1,0 +1,2 @@
+﻿$recent = (Get-Date).AddDays(-1)
+Get-ADUser -Filter { Enabled -eq $true -and PasswordNeverExpires -eq $false -and PasswordLastSet -gt $recent } -Properties PasswordLastSet | Select Name, UserPrincipalName, PasswordLastSet | Sort-Object PasswordLastSet
